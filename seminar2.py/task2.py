@@ -3,12 +3,10 @@
 # - пусть N = 4, тогда [ 1, 2, 6, 24 ] (1, 1*2, 1*2*3, 1*2*3*4)
 # Не используйте функцию math.factorial.
 
-
 n = int(input('Введите число N: '))
 count = 1
 
-for i in range(n):
-    i = i + 1
+for i in range(1, n+1):
     count = i * count
     
     print(count, end = ", ")
