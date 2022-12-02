@@ -19,6 +19,8 @@ amount = 0
 for i in range(count):
     if (count < m): 
         amount = (amount + 1)
+    elif (count == m):
+        amount += amount +1
     else:
        amount = (amount + 2) 
     
