@@ -8,7 +8,7 @@ number = input('Введите вещественное число: ')
 def sum (number):
     sum = 0
     for i in number:
-        if i != '.':
+        if i.isdigit():
             sum = sum + int(i)
     return sum
-print (sum(number))
+print (f'Сумма цифр введенного числа = {sum(number)}')
