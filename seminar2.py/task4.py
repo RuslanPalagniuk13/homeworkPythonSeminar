@@ -12,7 +12,14 @@ m = int (input('Введите число m(число людей которое
 
 count = 0 
 for i in range(1, n + 1):
-    count = (count + m) % i
-print(f'Победил участник под номером: {count +1}')   
+    count = (count + m) % i 
+print(f'Победил участник под номером: {count +1}')
 
-# К сожалению у меня не получилось включить в решение задачи расчет по монетам
+amount = 0
+for i in range(count):
+    if (count < m): 
+        amount = (amount + 1)
+    else:
+       amount = (amount + 2) 
+    
+print(f'Количество монет у победителя: {amount}') 
