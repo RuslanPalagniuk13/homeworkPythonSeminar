@@ -7,5 +7,5 @@ import random
 from random import randint
 
 lst = [randint(1, 100) for i in range(200)]  
-numbers = list(filter(lambda x: x[0] != x[1], enumerate(lst)))
+numbers = list(filter(lambda x: (x[0]+x[1])%5==0, enumerate(lst)))
 print(numbers)
