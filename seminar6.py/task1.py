@@ -10,7 +10,6 @@ test_list = []
 print(f"список: {test_list}")
 test_item = input("Введите искомую строку: ")
 
-
 def check_list(test_list, test_item):
     count = 0
     for i in range(len(test_list)):
@@ -21,5 +20,24 @@ def check_list(test_list, test_item):
     else:
         return -1
 
-
 print(f"ответ: {check_list(test_list, test_item)}")
+
+#  Второй вариант решения задачи, более короткий
+
+# mu_list, find = ["qwe", "asd", "zxc", "qwe", "ertqwe"], "qwe"
+# mu_list, find = ["йцу", "фыв", "ячс", "цук", "йцукен"], "йцу"
+# mu_list, find = ["123", "234", 123, "567"], "123"
+# mu_list, find = ["йцу", "фыв", "ячс", "цук", "йцукен", "йцу"], "йцу"
+# pos = -1 if my_list.count(find) < 2 else list(filter(lambda x: x[1] == find, enumerate(my_list)))[1][0]
+# print(f'позиция второго вхождения "{find}" -> {pos}')
+
+def find_second_occurence(string_list: list[str], search_word:str) -> int:
+    #for index, string in enumerate(string_list): # первый вариант из трех строк
+    #   if string == search_word:
+    #       list_indexes.append(index)
+                  
+    try:
+        list_indexes = [index for index, string in enumerate(string_list) if string==search_word] # вариант в одну строку
+        return list_indexes[0]
+    except IndexError:
+        return -1
