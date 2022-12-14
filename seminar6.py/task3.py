@@ -4,7 +4,7 @@
 number = int(input("Введите число: "))
 lst = []
 
-for i in range(number):
+for i in range(number):  # Первый вариант
     lst.append((-3)**i)
 print(f"Итоговая последовательность: {lst}")
 
