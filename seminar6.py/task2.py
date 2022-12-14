@@ -19,3 +19,12 @@ for i in range(len(list)):
 
 print(list)
 print(list2)
+
+# второй вариант решения задачи от преподавателя 
+
+#import random,math
+#numbers = [random.randint(0, 10) for _ in range(int(input('Введите количество элементов списка: ')))]
+
+#print(f'исходный список -> {numbers}')
+#product_list = list(map(lambda i: (numbers[i]*numbers[-(i+1)]), [i for i in range(math.ceil(len(numbers)/2))]))
+#print(f'произведение пар элементов -> {product_list}')
