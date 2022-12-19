@@ -13,6 +13,8 @@ def select_operation():
         1 - Добавить контакт 
         2 - Просмотр всех записей
         3 - Поиск контакта
+        4 - Удаление контакта
+        5 - Изменение контакта
         0 - Выход.\n''')
 
         menu_selection = input('Введите номер меню: > ')
@@ -31,6 +33,12 @@ def select_operation():
                 print(print_data)
             else:
                 print("Данные не обнаружены")
+        elif menu_selection == '4':    
+            # data = add_data()
+            a=1
+        elif menu_selection == '5':
+            # data = add_data()
+            a=1    
         elif menu_selection == '0':
             print("Работа завершена")
             raise SystemExit
