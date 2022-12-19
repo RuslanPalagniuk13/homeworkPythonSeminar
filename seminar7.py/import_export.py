@@ -34,3 +34,4 @@ def read_data():
                     data.append(t)
                     t= []
     return data
+

@@ -8,4 +8,3 @@ def search_data(word, data):
                 return item
     else:
         return None
-
