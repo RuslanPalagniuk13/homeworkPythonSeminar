@@ -26,7 +26,7 @@ def select_operation():
             data = read_data()
             print_data(data)
         elif menu_selection == '3':
-            word = input("Введите данные для поиска: ")
+            word = input("Введите фамилию для поиска: ")
             word = word.upper()
             data = read_data()
             item = search_data(word, data)
