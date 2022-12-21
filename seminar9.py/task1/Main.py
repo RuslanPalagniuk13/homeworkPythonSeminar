@@ -1,6 +1,6 @@
-from Methods import print_board
-from Methods import move_player as move
-from Methods import control_win as control
+from methods import print_board
+from methods import move_player as move
+from methods import control_win as control
 
 board = range(1,10)
 board = list(map(str, board))
